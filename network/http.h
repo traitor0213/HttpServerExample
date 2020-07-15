@@ -178,7 +178,7 @@ LPVOID ReadHttpContent(SOCKET hSocket)
 //free allocated from malloc function
 void FreeHttpContent(LPVOID lpBuffer)
 {
-    return free(lpBuffer);
+    free(lpBuffer);
 }
 
 void CloseHttpSession(SOCKET hSocket)
